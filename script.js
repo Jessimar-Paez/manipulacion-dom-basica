@@ -5,13 +5,16 @@ const input2 = document.querySelector('#calculo2');
 const btn = document.querySelector('#btnCalcular');
 const pResult = document.querySelector('#result');
 
+form.addEventListener('submit', sumarInputValues);
 
-btn.addEventListener('click', sumarInputValues);
-
-// btn.addEventListener('click', sumarInputValues);
-
-function sumarInputValues(event) {
-  event.preventDefault();
-  const sumaInputs = input1.value + input2.value;
-  pResult.innerText = "Resultado: " + sumaInputs;
+function sumarInputValues(event){
+    event.preventDefault();
+    const sumaInputs = input1.value + input2.value;
+    pResult.innerText = "Resultado: " + sumaInputs;
+   
 }
+
+
+
+
+
